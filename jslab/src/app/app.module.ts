@@ -8,8 +8,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ToolbarSearchComponent } from './toolbar-search/toolbar-search.component';
 import { BoardComponent } from './board/board.component';
 import { CardComponent } from './card/card.component';
-import { CardItemComponent } from './card-item/card-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ToolbarSearchComponent,
     BoardComponent,
     CardComponent,
-    CardItemComponent,
-    FooterComponent
+    FooterComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule
