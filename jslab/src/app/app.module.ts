@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HeaderLogoComponent } from './header-logo/header-logo.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ToolbarSearchComponent } from './toolbar-search/toolbar-search.component';
+import { HeaderLogoComponent } from './header/header-logo/header-logo.component';
+import { ToolbarComponent } from './board/toolbar/toolbar.component';
+import { ToolbarSearchComponent } from './board/toolbar/toolbar-search/toolbar-search.component';
 import { BoardComponent } from './board/board.component';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './board/card-list/card/card.component';
 import { FooterComponent } from './footer/footer.component';
-import { CardListComponent } from './card-list/card-list.component';
+import { CardListComponent } from './board/card-list/card-list.component';
+import { HeaderLoginComponent } from './header/header-login/header-login.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { CardListComponent } from './card-list/card-list.component';
     BoardComponent,
     CardComponent,
     FooterComponent,
-    CardListComponent
+    CardListComponent,
+    HeaderLoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

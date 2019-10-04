@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  term: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  searchTerm(value: string){
+    console.log('searching');
   }
 
 }

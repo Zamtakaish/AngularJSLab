@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import ICard from "../models/Card";
-import IUser from "../models/User";
+import ICard from "../../../models/Card";
+import IUser from "../../../models/User";
 
 @Component({
   selector: 'app-card',

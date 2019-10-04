@@ -1,0 +1,23 @@
+.header {
+  flex-shrink: 0;
+  height: 70px;
+  padding: 10px 3%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #41ae57;
+}
+.main{
+  padding: 0 5%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #aad79b;
+}
+.footer{
+  flex-shrink: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #41ae57;
+}
