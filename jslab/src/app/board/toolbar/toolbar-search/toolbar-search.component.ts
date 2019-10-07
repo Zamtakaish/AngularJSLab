@@ -18,7 +18,6 @@ export class ToolbarSearchComponent implements OnInit {
 
   emitSearch(value: string) {
     this.searchEvent.emit(value);
-    console.log(this.term);
   }
 
 }

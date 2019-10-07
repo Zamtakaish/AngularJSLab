@@ -1,1 +1,4 @@
-<app-card></app-card>
+<h4 class="main__card-list_title">{{cardList.name}}</h4>
+<div class="main__card-list" id="{{cardList.id}}"  *ngFor="let card of cardList.cards">
+  <app-card [card]="card"></app-card>
+</div>

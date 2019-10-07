@@ -1,1 +1,6 @@
-<p>card works!</p>
+<div class="main__card-list__card">
+  <h5 class="main__card-list__card_title"><span class="main__card-list__card_id">{{id}}</span>{{name}}</h5>
+  <p class="main__card-list__card_description">{{description}}</p>
+  <p *ngIf="dueDate">{{dueDate}}</p>
+  <p *ngIf="assignee">{{assignee}}</p>
+</div>

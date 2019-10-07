@@ -1,2 +1,4 @@
-<app-toolbar class="main__toolbar"></app-toolbar>
-<app-card-list class="main__card-list"></app-card-list>
+<app-toolbar class="main__toolbar" (passEvent)="saveTerm($event)"></app-toolbar>
+<div *ngFor="let cardList of cardLists">
+  <app-card-list [cardList] = cardList></app-card-list>
+</div>
