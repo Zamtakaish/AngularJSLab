@@ -26,7 +26,7 @@
 @media (max-width: 420px){
   .main__card-list{
     width: 90%;
-    margin: 0 2%;
+    margin: 3%;
     padding: 3%;
     display: flex;
     flex-direction: column;

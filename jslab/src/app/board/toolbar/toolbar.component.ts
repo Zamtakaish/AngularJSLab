@@ -16,7 +16,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  passTerm(value: string){
+  passTerm(value: string) {
     this.passEvent.emit(value);
   }
 

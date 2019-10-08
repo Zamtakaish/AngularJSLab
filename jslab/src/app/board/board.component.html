@@ -1,4 +1,5 @@
 <app-toolbar class="main__toolbar" (passEvent)="saveTerm($event)"></app-toolbar>
 <div class="main__card-list_wrapper">
-    <app-card-list class="main__card-list" *ngFor="let cardList of cardLists" [cardList] = cardList></app-card-list>
+    <app-card-list class="main__card-list" *ngFor="let cardList of cardLists"
+                   [cardList] = cardList [searchTerm]="searchTerm"></app-card-list>
 </div>

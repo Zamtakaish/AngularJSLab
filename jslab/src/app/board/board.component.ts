@@ -17,9 +17,8 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
   }
 
-  saveTerm(value){
-    this.searchTerm = value ? value : '';
-    console.log('got ' + this.searchTerm);
+  saveTerm(value) {
+    this.searchTerm = value;
   }
 
 }

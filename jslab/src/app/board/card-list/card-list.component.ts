@@ -10,6 +10,7 @@ import ICard from "../../models/Card";
 export class CardListComponent implements OnInit, IBoard {
 
   @Input() cardList: IBoard;
+  @Input() searchTerm: string;
 
   id: string;
   name: string;
@@ -26,6 +27,10 @@ export class CardListComponent implements OnInit, IBoard {
 
   removeCard(id: string) {
     this.cardList.cards = this.cardList.cards.filter(item => item.id !== id);
+  }
+
+  isValid(card: ICard) {
+    return this.searchTerm ? card.name.toLowerCase().includes(this.searchTerm.toLowerCase()) : true;
   }
 
 }
