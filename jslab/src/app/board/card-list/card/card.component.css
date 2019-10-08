@@ -1,21 +1,53 @@
 .main__card-list__card{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   font-size: 20px;
+  margin: 6px 0;
+  padding: 5%;
+  box-sizing: border-box;
+  border-radius: inherit;
+  background-color: rgba(136, 244, 141, 0.67);
+}
+.medium-priority{
+  background-color: #e6f356;
+}
+.main__card-list__card__buttons.medium-priority  button{
+  background-color: #bab33a;
+}
+.high-priority{
+  background-color: #f75760;
+}
+.main__card-list__card__buttons.high-priority  button{
+  background-color: #ba4044;
 }
 
+.done{
+  background-color: #c6c6c6;
+}
+.main__card-list__card__buttons.done  button{
+  background-color: #a2a2a2;
+}
 .main__card-list__card p{
   padding: 5%;
   font-size: 16px;
 }
 .main__card-list__card__buttons{
-  margin-right: 5%;
-  align-self: flex-end;
+  align-self: stretch;
   display: flex;
+  align-items: center;
+}
+label{
+  margin-right: 2%;
+  font-size: 15px;
+  font-style: italic;
+}
+input{
+  margin-right: auto;
 }
 .main__card-list__card__buttons button{
-  margin: 0 5%;
+  margin: 0 3%;
   padding: 8px;
   border: transparent;
   border-radius: 7px;

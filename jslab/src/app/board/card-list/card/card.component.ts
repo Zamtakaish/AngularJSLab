@@ -30,7 +30,7 @@ export class CardComponent implements OnInit, ICard {
     this.description = this.card.description;
     this.dueDate = this.card.dueDate ? this.card.dueDate : undefined;
     this.assignee = this.card.assignee ? this.card.assignee : undefined;
-    this.isDone = false;
+    this.isDone = this.card.isDone;
     this.isActive = false;
   }
 
@@ -42,4 +42,15 @@ export class CardComponent implements OnInit, ICard {
     this.deleteEvent.emit(id);
   }
 
+  compareDate(value: number) {
+    const currentDate: Date = new Date();
+    let comparingDate: Date;
+    if (this.dueDate) {
+      comparingDate = new Date(this.dueDate);
+      if (comparingDate >= currentDate) {
+        return Math.floor((Date.parse(comparingDate) - Date.parse(currentDate)) / (1000 * 3600 * 24)) <= value;
+      }
+    }
+    return false;
+  }
 }

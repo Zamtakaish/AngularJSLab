@@ -10,13 +10,23 @@ export const CARDLISTS: IBoard[] = [
         id: '1.1',
         name: 'Get a job',
         description: 'Get a job asap!',
+        assignee: {
+          id: 0,
+          firstName: 'Anton',
+          lastName: 'Ziuzikov'
+        },
         isDone: false
       },
       {
         id: '1.2',
         name: 'Healthcare',
         description: 'Sign to complex diagnostics',
-        dueDate: '01.11.2019',
+        dueDate: '11/01/2019',
+        assignee: {
+          id: 1,
+          firstName: 'Anton',
+          lastName: 'Ziuzikov'
+        },
         isDone: false
       }
     ]
@@ -29,7 +39,12 @@ export const CARDLISTS: IBoard[] = [
         id: '2.1',
         name: 'Reapply to university',
         description: 'Grow in programming and biology and reapply to university',
-        dueDate: '31.12.2020',
+        dueDate: '12/31/2020',
+        assignee: {
+          id: 0,
+          firstName: 'Anton',
+          lastName: 'Ziuzikov'
+        },
         isDone: false
       },
       {
@@ -42,7 +57,7 @@ export const CARDLISTS: IBoard[] = [
         id: '2.3',
         name: 'Watch new film',
         description: 'Watch new film',
-        dueDate: '17.10.2019',
+        dueDate: '10/17/2019',
         isDone: false
       }
     ]
@@ -55,21 +70,21 @@ export const CARDLISTS: IBoard[] = [
         id: '3.1',
         name: 'Buy crops',
         description: 'Rice, buckwheat',
-        dueDate: '14.10.2019',
+        dueDate: '10/14/2019',
         isDone: false
       },
       {
         id: '3.2',
         name: 'Set meeting with friends',
         description: 'Board games midweek meeting',
-        dueDate: '13.10.2019',
+        dueDate: '10/11/2019',
         isDone: false
       },
       {
         id: '3.3',
         name: 'Clean up',
         description: 'Clean up home',
-        dueDate: '15.10.2019',
+        dueDate: '10/15/2019',
         isDone: false
       }
     ]

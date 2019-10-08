@@ -1,9 +1,15 @@
-<div class="main__card-list__card" (click)="expandCard()">
-  <h5 class="main__card-list__card__title"><span class="main__card-list__card_id">{{id.slice(2)}}.</span> {{name}}</h5>
+<div class="main__card-list__card"
+     [class.done]="isDone" [class.medium-priority]="compareDate(7)" [class.high-priority]="compareDate(3)">
+  <h5 class="main__card-list__card__title" (click)="expandCard()">
+    <span class="main__card-list__card_id">{{id.slice(2)}}.</span> {{name}}
+  </h5>
   <p class="main__card-list__card__description" *ngIf="isActive">{{description}}</p>
-  <p class="main__card-list__card__due-date" *ngIf="dueDate && isActive">Due date: {{dueDate}}</p>
-  <p class="main__card-list__card__assignee" *ngIf="assignee && isActive">{{assignee}}</p>
-  <div class="main__card-list__card__buttons" *ngIf="isActive">
+  <p class="main__card-list__card__due-date" *ngIf="dueDate && isActive">Due date: {{dueDate | date}}</p>
+  <p class="main__card-list__card__assignee" *ngIf="assignee && isActive">Assignee: {{assignee.firstName}} {{assignee.lastName}}</p>
+  <div class="main__card-list__card__buttons" *ngIf="isActive"
+       [class.done]="isDone" [class.medium-priority]="compareDate(7)" [class.high-priority]="compareDate(3)">
+    <label for="done">Done:</label>
+    <input type="checkbox" id="done" [(ngModel)]="isDone">
     <button class="main__card-list__card__buttons__button_edit">Edit</button>
     <button class="main__card-list__card__buttons__button_remove" (click)="emitDelete(id)">Remove</button>
   </div>
