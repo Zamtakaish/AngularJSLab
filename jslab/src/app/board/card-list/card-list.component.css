@@ -1,0 +1,14 @@
+.main__card-list__title{
+  padding: 5% 0;
+  font-size: 24px;
+}
+.main__card-list__card_wrapper{
+  width: 80%;
+  margin: 6px 0;
+  padding: 5%;
+  align-self: center;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 13px;
+  background-color: rgba(136, 244, 141, 0.67);
+}

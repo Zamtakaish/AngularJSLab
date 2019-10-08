@@ -1,6 +1,10 @@
-<div class="main__card-list__card">
-  <h5 class="main__card-list__card_title"><span class="main__card-list__card_id">{{id}}</span>{{name}}</h5>
-  <p class="main__card-list__card_description">{{description}}</p>
-  <p *ngIf="dueDate">{{dueDate}}</p>
-  <p *ngIf="assignee">{{assignee}}</p>
+<div class="main__card-list__card" (click)="expandCard()">
+  <h5 class="main__card-list__card__title"><span class="main__card-list__card_id">{{id.slice(2)}}.</span> {{name}}</h5>
+  <p class="main__card-list__card__description" *ngIf="isActive">{{description}}</p>
+  <p class="main__card-list__card__due-date" *ngIf="dueDate && isActive">Due date: {{dueDate}}</p>
+  <p class="main__card-list__card__assignee" *ngIf="assignee && isActive">{{assignee}}</p>
+  <div class="main__card-list__card__buttons" *ngIf="isActive">
+    <button class="main__card-list__card__buttons__button_edit">Edit</button>
+    <button class="main__card-list__card__buttons__button_remove" (click)="emitDelete(id)">Remove</button>
+  </div>
 </div>

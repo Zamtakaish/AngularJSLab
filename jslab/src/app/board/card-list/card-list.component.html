@@ -1,4 +1,4 @@
-<h4 class="main__card-list_title">{{cardList.name}}</h4>
-<div class="main__card-list" id="{{cardList.id}}"  *ngFor="let card of cardList.cards">
-  <app-card [card]="card"></app-card>
-</div>
+<h4 class="main__card-list__title">{{cardList.name}}</h4>
+<app-card class="main__card-list__card_wrapper" id="{{cardList.id}}"
+          *ngFor="let card of cardList.cards"
+          [card]="card" (deleteEvent)="removeCard($event)"></app-card>

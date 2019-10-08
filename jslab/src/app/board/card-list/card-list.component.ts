@@ -24,4 +24,8 @@ export class CardListComponent implements OnInit, IBoard {
     this.cards = this.cardList.cards;
   }
 
+  removeCard(id: string) {
+    this.cardList.cards = this.cardList.cards.filter(item => item.id !== id);
+  }
+
 }
