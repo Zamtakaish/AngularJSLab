@@ -1,9 +1,16 @@
 .header__login__button{
   height: 100%;
   width: 100%;
-  border: 1px solid #3d7b42;
+  border: 2px solid #419f6a;
   border-radius: 5px;
   outline: none;
-  background-color: #23d471;
-  color: #3d7b42;
+  background-color: #61cc6d;
+  color: #286758;
+  font-weight: 600;
+}
+.header__login__button:active{
+  background-color: #7ee689;
+  border-color: #3b7643;
+  color: #1a3425;
+  transform: none;
 }

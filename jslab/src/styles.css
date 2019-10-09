@@ -10,3 +10,11 @@ app-root {
   display: flex;
   flex-direction: column;
 }
+button{
+  outline: none;
+  transition-duration: 30ms;
+}
+button:active{
+  transform: scale(0.93);
+  transition-duration: 30ms;
+}

@@ -21,9 +21,10 @@
   align-items: center;
   border-radius: 20px;
   background-color: #e0ffe1;
+  color: #1a3425;
 }
 
-@media (max-width: 420px){
+@media (max-width: 425px){
   .main__card-list{
     width: 90%;
     margin: 3%;

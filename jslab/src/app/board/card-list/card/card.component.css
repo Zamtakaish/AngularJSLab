@@ -10,27 +10,52 @@
   border-radius: inherit;
   background-color: rgba(136, 244, 141, 0.67);
 }
-.medium-priority{
-  background-color: #e6f356;
+.main__card-list__card.active{
+  background-color: rgba(196, 248, 191, 0.67);
+  border: 1px solid #49b94e;
 }
-.main__card-list__card__buttons.medium-priority  button{
-  background-color: #bab33a;
+.main__card-list__card.medium-priority{
+  background-color: #dae853;
 }
-.high-priority{
-  background-color: #f75760;
+.main__card-list__card.medium-priority.active{
+  background-color: #eefa89;
+  border: 1px solid #bec44e;
+}
+.main__card-list__card__buttons.medium-priority button{
+  background-color:#bec44e;
+}
+.main__card-list__card.high-priority{
+  background-color: #de6368;
+}
+.main__card-list__card.high-priority.active{
+  background-color: #f78f91;
+  border: 1px solid #bc555e;
 }
 .main__card-list__card__buttons.high-priority  button{
-  background-color: #ba4044;
+  background-color: #bc555e;
 }
 
-.done{
+.main__card-list__card.done{
   background-color: #c6c6c6;
 }
+.main__card-list__card.done.active{
+  background-color: #e3e3e3;
+  border: 1px solid #8e8e8e;
+}
 .main__card-list__card__buttons.done  button{
-  background-color: #a2a2a2;
+  background-color: #b1b1b1;
+}
+.main__card-list__card__info{
+  margin: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.main__card-list__card__info span{
+  font-weight: 600;
+  text-decoration: underline;
 }
 .main__card-list__card p{
-  padding: 5%;
+  padding: 3%;
   font-size: 16px;
 }
 .main__card-list__card__buttons{
