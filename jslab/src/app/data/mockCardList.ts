@@ -11,7 +11,7 @@ export const CARDLISTS: IBoard[] = [
         name: 'Get a job',
         description: 'Get a job asap!',
         assignee: {
-          id: 0,
+          id: '1',
           firstName: 'Anton',
           lastName: 'Ziuzikov'
         },
@@ -23,7 +23,7 @@ export const CARDLISTS: IBoard[] = [
         description: 'Sign to complex diagnostics',
         dueDate: '11/01/2019',
         assignee: {
-          id: 1,
+          id: '2',
           firstName: 'Anton',
           lastName: 'Ziuzikov'
         },
@@ -41,7 +41,7 @@ export const CARDLISTS: IBoard[] = [
         description: 'Grow in programming and biology and reapply to university',
         dueDate: '12/31/2020',
         assignee: {
-          id: 0,
+          id: '1',
           firstName: 'Anton',
           lastName: 'Ziuzikov'
         },

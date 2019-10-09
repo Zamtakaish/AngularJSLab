@@ -48,7 +48,7 @@ export class CardComponent implements OnInit, ICard {
     if (this.dueDate) {
       comparingDate = new Date(this.dueDate);
       if (comparingDate >= currentDate) {
-        return Math.floor((Date.parse(comparingDate) - Date.parse(currentDate)) / (1000 * 3600 * 24)) <= value;
+        return Math.floor((Date.parse(comparingDate.toString()) - Date.parse(currentDate.toString())) / (1000 * 3600 * 24)) <= value;
       }
     }
     return false;
